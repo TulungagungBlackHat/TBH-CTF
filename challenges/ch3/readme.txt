@@ -1,0 +1,2 @@
+VGhpcyBpcyBiYXNlNjQ6IFRCe0ZPUkVOU0lLX0lTX0ZVTn0=
+Decode base64 untuk flag
