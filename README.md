@@ -1,36 +1,27 @@
-# TBH-CTF - Mini CTF Edukasi
+# TBH-CTF
 
 <p align="center">
-  <img src="https://img.shields.io/badge/CTF-Educational-green?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Level-Pemula-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/TBH-Tulungagung%20Black%20Hat-red?style=for-the-badge">
+  <a href="https://github.com/TulungagungBlackHat/TBH-CTF/actions/workflows/ci.yml"><img src="https://img.shields.io/badge/license-MIT-red.svg" alt="License">
+  <img src="https://img.shields.io/badge/level-beginner-blue.svg" alt="Beginner">
+  <img src="https://img.shields.io/badge/challenges-3-green.svg" alt="Challenges"></a>
 </p>
 
-> **Realistis**: 3 challenge pemula untuk latihan, bukan jaminan juara. Selesaikan dengan teliti, pelajari konsepnya.
+A tiny CTF for people taking their first capture-the-flag. Three challenges — crypto, web, forensics — all solvable with basic tools and careful reading.
 
-## 📜 Aturan
-- Flag format: `TBH{...}`
-- Jangan share flag langsung, share write-up
-- Untuk edukasi, bukan untuk merusak sistem orang lain
+Part of the [Tulungagung Black Hat](https://github.com/TulungagungBlackHat) toolset.
 
-## 🎯 Challenges
+## Challenges
 
-### Ch1 - Crypto Caesar (Easy)
-File: `challenges/ch1/cipher.txt`
-```
-W E X Q X J D J D Q F X J D Q F W
-Hint: Caesar shift 5
-```
-Flag: `TBH{...}` - decode sendiri
+| # | Category | Difficulty | Skill practiced |
+|---|----------|------------|-----------------|
+| 1 | Crypto | Easy | Caesar cipher decoding |
+| 2 | Web | Easy | Reading HTML source, hidden comments |
+| 3 | Forensics | Easy | Base64 hidden in plain sight |
 
-### Ch2 - Web Hidden (Easy)
-File: `challenges/ch2/index.html` - ada komentar HTML tersembunyi
-Buka file, cek View Source
+Flags use the format `TBH{...}`.
 
-### Ch3 - Forensik Steg (Easy)
-File: `challenges/ch3/readme.txt` - ada base64 tersembunyi
+## How to Play
 
-## 🚀 Cara Main (Termux)
 ```bash
 git clone https://github.com/TulungagungBlackHat/TBH-CTF
 cd TBH-CTF
@@ -39,11 +30,23 @@ cat challenges/ch2/index.html
 cat challenges/ch3/readme.txt
 ```
 
-## ✅ Submit
-Buka Issues dengan format `[SOLVED] Ch1` + jelaskan cara solve (write-up), bukan cuma flag.
+No servers to attack, no installation needed — every challenge is a local file.
 
-## 👥 TBH
-uchil404 - Tulungagung Black Hat - Always Smile :)
+## Submitting Solutions
 
-## 📄 License
-MIT - Edukasi
+Open an Issue with the title `[SOLVED] Ch1` and include your **write-up** (how you solved it, not just the flag). Good write-ups teach the next beginner; flag-only posts get closed.
+
+## Rules
+
+- Share write-ups, not raw flags
+- Educational only — the same skills used against systems you don't own are a crime, not a CTF
+- Stuck? Re-read the file byte by byte. That's the point.
+
+## Related Tools
+
+- [awesome-tulungagung](https://github.com/TulungagungBlackHat/awesome-tulungagung) — curated learning resources for after the CTF
+- [TBH-Toolkit](https://github.com/TulungagungBlackHat/TBH-Toolkit) — the real-world toolset these skills lead to
+
+## License
+
+[MIT](LICENSE) — Tulungagung Black Hat, East Java, Indonesia. Always Smile :)
